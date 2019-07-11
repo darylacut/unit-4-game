@@ -12,7 +12,7 @@ var randomNumber = Math.floor(Math.random() * (120 - 19 +1)) + 19;
     var totalValue = 0
 
 
-// $(document).ready(function() {
+ $(document).ready(function() {
 
     
 $("#randomNumberBox").text(randomNumber);
@@ -21,7 +21,7 @@ $("#randomNumberBox").text(randomNumber);
 
     $("#button1").on("click", function() {
         totalValue = button1Value + totalValue;
-        $("#total").text("totalValue");   
+        $("#total").text(totalValue);   
     });
     
     $("#button2").on("click", function() {
@@ -39,17 +39,17 @@ $("#randomNumberBox").text(randomNumber);
         $("#total").text(totalValue);
     });
 
-});
 
-    if ( total === randomNumber ); {
+
+    if ( totalValue === randomNumber ); {
         winsCount++;
         $('#wins').text(winsCount);
     }
       
-     if ( total > randomNumber ); {
+     if ( totalValue > randomNumber ); {
         lossesCount++;
         $('#losses').text(lossesCount);
     }
        
-
+});
 
