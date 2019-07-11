@@ -12,41 +12,41 @@ var randomNumber = Math.floor(Math.random() * (120 - 19 +1)) + 19;
     var totalValue = 0
 
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
     
 $("#randomNumberBox").text(randomNumber);
+//as far as i know this should be able to display the value of randomNumber to randomNumberBox in html
 
 
-    $("#button1").on("click," function() {
+    $("#button1").on("click", function() {
         totalValue = button1Value + totalValue;
-        $("#total").text(totalValue);   
-    }
+        $("#total").text("totalValue");   
+    });
     
-    $("#button2").on("click," function() {
+    $("#button2").on("click", function() {
         totalValue = button2Value + totalValue;
         $("#total").text(totalValue);
-    }
+    });
 
-    $("#button3").on("click," function() {
+    $("#button3").on("click", function() {
         totalValue = button3Value + totalValue;
         $("#total").text(totalValue);
-    }
+    });
     
-    $("#button4").on("click," function() {
+    $("#button4").on("click", function() {
         totalValue = button4Value + totalValue;
         $("#total").text(totalValue);
-    }
+    });
 
-}
+});
 
     if ( total === randomNumber ); {
         winsCount++;
         $('#wins').text(winsCount);
     }
       
-
-    else if ( total > randomNumber ); {
+     if ( total > randomNumber ); {
         lossesCount++;
         $('#losses').text(lossesCount);
     }
