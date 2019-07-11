@@ -2,21 +2,37 @@
 
 //document.getElementById("#randomNumber").innerHTML = 
 
-function startgame () {
-
-    var randomNumber = Math.floor(Math.random() * (120 - 19 +1)) + 19;
+var randomNumber = Math.floor(Math.random() * (120 - 19 +1)) + 19;
     var button1 = Math.floor(Math.random() * (12)) + 1;
     var button2 = Math.floor(Math.random() * (12)) + 1;
     var button3 = Math.floor(Math.random() * (12)) + 1;
     var button4 = Math.floor(Math.random() * (12)) + 1;
+    var wins
+    var losses
+    var total
 
-}
 
-startgame ();
 
-    $("button1").on("click", append())
+$(document).ready(function() {
 
-        if ( total === randomNumber );
-            wins++;
-        else if ( total > randomNumber );
+    $("button1").on("click," )
+    
+   
+    if ( total === randomNumber );
+        wins++;
+        $('#winCount').text(winsCount);
+
+
+    if ( total > randomNumber );
         losses++;
+
+        $("#randomNumberBox").html("<h1>randomNumber</h1>");
+
+        $("button1").on("click", function() {
+            
+        }
+
+
+
+
+
