@@ -17,38 +17,33 @@ $(document).ready(function() {
 
     $("#button1").on("click," function() {
         totalValue = button1Value + totalValue;
-        
+        $("#total").text(totalValue);   
     }
     
     $("#button2").on("click," function() {
         totalValue = button2Value + totalValue;
+        $("#total").text(totalValue);
     }
 
     $("#button3").on("click," function() {
         totalValue = button3Value + totalValue;
+        $("#total").text(totalValue);
     }
     
     $("#button4").on("click," function() {
         totalValue = button4Value + totalValue;
+        $("#total").text(totalValue);
     }
 
-
+}
 
     if ( total === randomNumber );
-        wins++;
+        winsCount++;
         $('#wins').text(winsCount);
 
 
-    if ( total > randomNumber );
-        losses++;
-
-        $("#randomNumberBox").html("<h1>randomNumber</h1>");
-
-        $("button1").on("click", function() {
-            
-        }
-
-
-
+    else if ( total > randomNumber );
+        lossesCount++;
+        $('#losses').text(lossesCount);
 
 
