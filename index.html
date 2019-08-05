@@ -7,7 +7,9 @@
     <title>Crystal Collector Game</title>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel=stylesheet link ref="assets/css/style.css">
+
+    <link rel=stylesheet href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=MedievalSharp&display=swap" rel="stylesheet">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     </script>
@@ -17,10 +19,11 @@
     
 
 </head>
-<body>
 
-    <h1>Crystal Collector Game</h1>
-    <p>You will be given a random number at the start of the game. 
+<body>
+    <embed id="bgm" src="assets/Puzzle-Game-2_Looping.mp3" loop="true" autostart="true">
+    <h1>Game of Logos</h1>
+    <!--<p>You will be given a random number at the start of the game. 
         <br>
         There are four symbols below. By clicking on a symbol you will add a specific amount of points to your total score.
         <br>
@@ -30,48 +33,50 @@
         <br>
         Each time when the game starts, the game will change the values of each symbol.
         <br>
-    </p>
+    </p>-->
 
 <div id="container">
 
-    <div>   
-        <h1 id="randomNumberBox"></h1>
+    
+        <div id="RandomNumber">   
+            <h1>Your troops: <span id="randomNumberBox"></span></h1>
+        </div>
+        <div id="TotalNumber">
+            <h1>Enemy troops: <span id="total"></span></h1>
+        </div>
     </div>
-
 <br>
 <br>
+<br>
+    <div class="row" id="SymbolsDiv">
+        <div>
+            <img src = "assets/images/Baratheon.png" id="button1" class="symbols">
+        </div>
+        
+        <div >
+            <img src = "assets/images/Stark.png" id="button2" class="symbols">
+        </div>
+        
+        <div >
+            <img src = "assets/images/Targaryen.png" id="button3" class="symbols">
+        </div>
 
-    <div>
-        <h1 id="button1">#</h1>
+        <div >
+            <img src = "assets/images/Lannister.png" id="button4" class="symbols">
+        </div>
     </div>
-    
-    <div >
-        <h1 id="button2">$</h1>
-    </div>
-    
-    <div >
-        <h1 id="button3">%</h1>
-    </div>
-
-    <div >
-        <h1 id="button4">&</h1>
-    </div>
-
     <br>
     <br>
 
-    <div>
-        <h1 id="total"></h1>
-    </div>
-
 <br>
+    <div id="Results">
+        <div>
+            <h1>Your wins so far: <span id ="wins"></h1>
+        </div>
 
-    <div>
-        <h1>Your wins so far: <span id ="wins"></h1>
-    </div>
-
-    <div>
-        <h1>Your losses so far: <span id ="losses"></h1>
+        <div>
+            <h1>Your losses so far: <span id ="losses"></h1>
+        </div>
     </div>
 
 </div>

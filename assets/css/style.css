@@ -1,0 +1,48 @@
+.symbols {
+    width: 200px;
+    height: 200px;
+    margin: 0px 30px 0px 30px;
+}
+
+body {
+    background-image: url("../images/knight-3066217_edited.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'MedievalSharp', cursive;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+#bgm {
+    height: 1px;
+    width: 1px;
+}
+
+#RandomNumber {
+    position: absolute;
+    top: 100px;
+    left: 10px;
+}
+
+#TotalNumber {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+}
+
+#SymbolsDiv {
+    position: absolute;
+   margin-top: 70px;
+   margin-left: 170px;
+}
+
+#Results {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+}
