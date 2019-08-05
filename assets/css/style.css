@@ -1,13 +1,19 @@
 .symbols {
     width: 200px;
     height: 200px;
-    margin: 20px 30px;
+    margin: 15px 30px;
     opacity: 0.5;
 }
 
 .symbols:hover {
     opacity: 1;
     cursor: pointer;
+}
+
+#Logo {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 30px;
 }
 
 #title,
@@ -25,9 +31,14 @@ body {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 35px;
     color: grey;
     text-align: center;
+}
+
+#title {
+    font-size: 50px;
+    color: white;
 }
 
 .column {
