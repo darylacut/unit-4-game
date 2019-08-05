@@ -31,12 +31,14 @@
     function checkIfWin() {
         if ( totalValue == randomNumber ) {
             winsCount++;
+            alert ("You got a WIN!");
             $('#wins').text(winsCount);
             startGame();
         }
           
          if ( totalValue > randomNumber ) {
             lossesCount++;
+            alert ("You incurred a LOSS!");
             $('#losses').text(lossesCount);
             startGame();
         }
