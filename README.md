@@ -10,3 +10,6 @@ You will be given a random number at the start of the game. There are four symbo
 You get wins in the game by matching your total score to random number, you get losses in the game if your total score goes above the random number. 
 
 The value of each symbol is hidden from you until you click on it. Each time when the game starts, the game will change the values of each symbol.
+
+
+Try it here: https://darylacut.github.io/unit-4-game/
